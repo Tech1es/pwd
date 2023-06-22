@@ -94,7 +94,7 @@
                 echo "
                 <script>
                 alert('Buku berhasil ditambahkan');
-                location='buku.php';
+                location='tambah_buku.php';
                 </script>
                 ";
             } else {

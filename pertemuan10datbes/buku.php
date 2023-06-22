@@ -16,7 +16,7 @@ require "controllers/functions.php";
 </head>
 
 <body>
-    <h1>Selamat Datang di Halaman Buku</h1>
+    <h1 style="text-align: center;">Selamat Datang di Halaman Buku</h1>
     <hr>
     <ul>
         <a href="index.php">
@@ -39,10 +39,13 @@ require "controllers/functions.php";
             <th>Opsi</th>
         </tr>
         <?php
-        foreach (buku() as $b[]) : ?>
+        foreach (buku() as $b) : ?>
             <tr>
-                <td><?= $b["id"]; ?></td>
-                <td><?= $b["judul_buku"]; ?></td>
+                <td style="text-align: center;"><?= @$b["id"]; ?></td>
+                <td style="text-align: center;"><?= @$b["judul_buku"]; ?></td>
+                <td style="text-align: center;"><?= @$b["tahun_terbit"]; ?></td>
+                <td style="text-align: center;"><?= @$b["penulis"]; ?></td>
+                <td style="text-align: center;"><?= @$b["penerbit"]; ?></td>
             </tr>
         <?php endforeach;
         ?>
