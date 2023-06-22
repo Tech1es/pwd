@@ -1,3 +1,5 @@
+<?php require "controllers/functions.php"; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,7 +45,49 @@
                     </select>
                 </td>
             </tr>
+            <tr>
+                <th>Penulis</th>
+                <td>:</td>
+                <td>
+                    <input type="text" name="penulis">
+                </td>
+                <tr>
+                    <th>Penerbit</th>
+                    <td>:</td>
+                    <td>
+                        <input type="text" name="penerbit">
+                    </td>
+                </tr>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td>
+                    <button name="simpan_buku" type="submit" style="width: 25%">Simpan</button>
+                </td>
+            </tr>
         </table>
     </form>
+    <td></td>
+    <td></td>
+    <?php 
+    if (isset($_POST["simpan_buku"])) {
+        $judul_buku = $_POST["judul_buku"];
+        $tahun_terbit = $_POST["tahun_terbit"];
+        $penulis = $_POST["penulis"];
+        $penerbit = $_POST["penerbit"];
+        if ($judul_buku == "") {
+            echo "<i>Judul buku masih kosong!</i>";
+        }elseif ($tahun_terbit == "") {
+            echo "<i>Tahun terbit masih kosong!</i>";
+        }elseif ($penulis == "") {
+            echo "<i>Nama penulis masih kosong!</i>";
+        }elseif ($penerbit == "") {
+            echo "<i>Penerbit masih kosong!</i>";
+        }else{
+
+        }
+    }
+    ?>
 </body>
 </html>
