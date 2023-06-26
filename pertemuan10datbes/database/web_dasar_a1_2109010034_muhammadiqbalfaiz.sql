@@ -28,13 +28,13 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `buku` (
-  `ID` int(4) NOT NULL,
-  `Judul Buku` varchar(50) NOT NULL,
-  `Tahun Terbit` year(4) NOT NULL,
-  `Penulis` varchar(25) NOT NULL,
-  `Penerbit` varchar(25) NOT NULL,
-  `Simpan` datetime NOT NULL,
-  `Edit` datetime NOT NULL
+  `id` int(4) NOT NULL,
+  `judul_buku` varchar(50) NOT NULL,
+  `tahun_terbit` year(4) NOT NULL,
+  `penulis` varchar(25) NOT NULL,
+  `penerbit` varchar(25) NOT NULL,
+  `simpan` datetime NOT NULL,
+  `edit` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
