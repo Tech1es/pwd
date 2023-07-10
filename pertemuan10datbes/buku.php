@@ -16,7 +16,7 @@ require "controllers/functions.php";
 </head>
 
 <body>
-    <h1 style="text-align: center;">Selamat Datang di Halaman Buku</h1>
+    <h1>Selamat Datang di Halaman Buku</h1>
     <hr>
     <ul>
         <a href="index.php">
@@ -41,12 +41,16 @@ require "controllers/functions.php";
         <?php
         foreach (buku() as $b) : ?>
             <tr>
-                <td style="text-align: center;"><?= @$b["id"]; ?></td>
-                <td style="text-align: center;"><?= @$b["judul_buku"]; ?></td>
-                <td style="text-align: center;"><?= @$b["tahun_terbit"]; ?></td>
-                <td style="text-align: center;"><?= @$b["penulis"]; ?></td>
-                <td style="text-align: center;"><?= @$b["penerbit"]; ?></td>
-                <td style="text-align: center;"><?= date("d F Y, H:i", strtotime(@$b["edit"])); ?></td>
+                <td><?= $b["id"]; ?></td>
+                <td><?= $b["judul_buku"]; ?></td>
+                <td><?= $b["tahun_terbit"] ?></td>
+                <td><?= $b["penulis"] ?></td>
+                <td><?= $b["penerbit"] ?></td>
+                <td><?= $b["edit"] ?></td>
+                <td>
+                    <a href="edit_buku.php?id=<?= $b["id"] ?>">Edit</a>
+                    <a href="hapus_buku.php">Hapus</a>
+                </td>
             </tr>
         <?php endforeach;
         ?>
