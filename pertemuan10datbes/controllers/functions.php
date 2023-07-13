@@ -31,3 +31,10 @@ function buku_satu($id_buku,$isi_tabel)
   id = '$id_buku'"));
   return $x[$isi_tabel];
 }
+
+function buku_satu_jumlah($id_buku)
+{
+  return mysqli_num_rows(
+    q("SELECT * FROM buku WHERE id = '$id_buku'")
+  );
+}

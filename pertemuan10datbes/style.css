@@ -2,3 +2,7 @@ table {
   border-collapse: collapse;
   width: 70%;
 }
+
+.tr1 {
+  text-align: center;
+}

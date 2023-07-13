@@ -40,7 +40,7 @@ require "controllers/functions.php";
         </tr>
         <?php
         foreach (buku() as $b) : ?>
-            <tr>
+            <tr class="tr1">
                 <td><?= $b["id"]; ?></td>
                 <td><?= $b["judul_buku"]; ?></td>
                 <td><?= $b["tahun_terbit"] ?></td>
@@ -49,12 +49,15 @@ require "controllers/functions.php";
                 <td><?= $b["edit"] ?></td>
                 <td>
                     <a href="edit_buku.php?id=<?= $b["id"] ?>">Edit</a>
-                    <a href="hapus_buku.php">Hapus</a>
+                    <a href="controllers/hapus_buku.php?id=<?= $b["id"]; ?>')">Hapus</a>
                 </td>
             </tr>
         <?php endforeach;
         ?>
     </table>
+
+    <!-- <script src="controllers/javascript.js"></script> -->
+
 </body>
 
 </html>
