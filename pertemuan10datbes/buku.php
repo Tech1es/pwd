@@ -40,7 +40,7 @@ require "controllers/functions.php";
         </tr>
         <?php
         foreach (buku() as $b) : ?>
-            <tr class="tr1">
+            <tr>
                 <td><?= $b["id"]; ?></td>
                 <td><?= $b["judul_buku"]; ?></td>
                 <td><?= $b["tahun_terbit"] ?></td>
@@ -49,7 +49,7 @@ require "controllers/functions.php";
                 <td><?= $b["edit"] ?></td>
                 <td>
                     <a href="edit_buku.php?id=<?= $b["id"] ?>">Edit</a>
-                    <a href="controllers/hapus_buku.php?id=<?= $b["id"]; ?>')">Hapus</a>
+                    <a href="controllers/hapus_buku.php?id=<?= $b["id"]; ?>">Hapus</a>
                 </td>
             </tr>
         <?php endforeach;
@@ -57,6 +57,13 @@ require "controllers/functions.php";
     </table>
 
     <!-- <script src="controllers/javascript.js"></script> -->
+    <script>
+        // function hapusDialog(urlHapus) {
+        //     if (confirm("Apakah data ini akan dihapus?")) {
+        //         document.location(urlHapus)
+        //     }
+        // }
+    </script>
 
 </body>
 
