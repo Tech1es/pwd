@@ -28,14 +28,14 @@
     <form action="" method="post">
         <table>
             <tr>
-                <th>Judul Buku</th>
+                <th>Book Title</th>
                 <td>:</td>
                 <td>
-                    <input type="text" name="judul_buku" value="<?= @$_POST["judul_buku"]; ?>">
+                    <input type="text" name="judul_buku" placeholder="Input Book Title" value="<?= @$_POST["judul_buku"]; ?>">
                 </td>
             </tr>
             <tr>
-                <th>Tahun Terbit</th>
+                <th>Release Year</th>
                 <td>:</td>
                 <td>
                     <select name="tahun_terbit">
@@ -48,24 +48,24 @@
                 </td>
             </tr>
             <tr>
-                <th>Penulis</th>
+                <th>Author</th>
                 <td>:</td>
                 <td>
-                    <input type="text" name="penulis" value="<?= @$_POST["penulis"]; ?>">
+                    <input type="text" name="penulis" placeholder="Input Author's Name" value="<?= @$_POST["penulis"]; ?>">
                 </td>
             </tr>
             <tr>
-                <th>Penerbit</th>
+                <th>Publisher</th>
                 <td>:</td>
                 <td>
-                    <input type="text" name="penerbit" value="<?= @$_POST["penerbit"]; ?>">
+                    <input type="text" name="penerbit" placeholder="Input Publisher" value="<?= @$_POST["penerbit"]; ?>">
                 </td>
             </tr>
             <tr>
                 <td></td>
                 <td></td>
                 <td>
-                    <button name="simpan_buku" type="submit">Simpan</button>
+                    <button name="simpan_buku" type="submit">Save</button>
                 </td>
             </tr>
         </table>
@@ -94,7 +94,7 @@
                 echo "
                 <script>
                 alert('Buku berhasil ditambahkan');
-                location='tambah_buku.php';
+                location='buku.php';
                 </script>
                 ";
             } else {

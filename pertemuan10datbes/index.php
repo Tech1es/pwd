@@ -7,7 +7,7 @@
     <title>Website Saya</title>
 </head>
 <body>
-    <h1>Selamat Datang di Website Saya</h1>
+    <h1 style="text-align: center;">Selamat Datang di Website Saya</h1>
     <hr>
     <ul>
         <a href="buku.php">

@@ -17,7 +17,7 @@ $id_buku = $_GET["id"];
 </head>
 
 <body>
-    <h1>Selamat Datang di Halaman Edit Buku</h1>
+    <h1 style="text-align: center;">Selamat Datang di Halaman Edit Buku</h1>
     <hr>
     <ul>
         <a href="buku.php">

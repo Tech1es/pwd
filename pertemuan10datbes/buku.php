@@ -49,7 +49,7 @@ require "controllers/functions.php";
                 <td><?= $b["edit"] ?></td>
                 <td>
                     <a href="edit_buku.php?id=<?= $b["id"] ?>">Edit</a>
-                    <a href="controllers/hapus_buku.php?id=<?= $b["id"]; ?>">Hapus</a>
+                    <a href="javascript:hapus('controllers/hapus_buku.php?id=<?= $b["id"] ?>')">Hapus</a>
                 </td>
             </tr>
         <?php endforeach;
@@ -58,11 +58,12 @@ require "controllers/functions.php";
 
     <!-- <script src="controllers/javascript.js"></script> -->
     <script>
-        // function hapusDialog(urlHapus) {
-        //     if (confirm("Apakah data ini akan dihapus?")) {
-        //         document.location(urlHapus)
-        //     }
-        // }
+        function hapus(url) 
+        {
+            if (confirm("Apakah data berikut akan dihapus?")) {
+                document.location = url
+            }    
+        }
     </script>
 
 </body>
