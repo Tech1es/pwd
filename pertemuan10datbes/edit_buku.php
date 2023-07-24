@@ -5,30 +5,57 @@ $id_buku = $_GET["id"];
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Saya</title>
-
-    <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
-
 <body>
-    <h1 style="text-align: center;">Selamat Datang di Halaman Edit Buku</h1>
+    <h1 style="text-align: center;">Edit Book Page</h1>
     <hr>
-    <ul>
-        <a href="buku.php">
-            <li>Buku</li>
+    <nav class="navbar navbar-expand-lg navbar-light nav sticky-top bg-warning" id="myHeader">
+		<div class="container">
+		  <img src="logo-umsu.png" width="17%">
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav ml-auto">
+	        <ul class="navbar-nav mr-auto">
+                <ul>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.php">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="buku.php">Booklist</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="tambah_buku.php">Add a book</a>
+                    </li>
+        <!-- <li class="nav-item active">
+			<a class="nav-link" href="buku.php">Booklist</a>
+		</li> -->
+        <!-- <a href="buku.php">
+            <li>Data Buku</li>
         </a>
         <a href="pinjam.php">
             <li>Pinjam Buku</li>
-        </a>
-    </ul>
+        </a> -->
+                </ul>
+                </ul>
+                </ul>
+            </div>
+        </div>
+</nav>
     <hr>
-    <form action="" method="POST">
+    <section class="about" id="about">
+	<div class="container sejarah">
+		<div class="row">
+			<div class="col">
+            <form action="" method="POST">
         <table>
             <tr>
                 <th>Judul Buku</th>
@@ -67,6 +94,10 @@ $id_buku = $_GET["id"];
             </tr>
         </table>
     </form>
+		</div>
+	</div>
+</section>
+    
 
     <?php
     if (isset($_POST["edit_buku"])) {
