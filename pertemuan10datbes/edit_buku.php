@@ -27,7 +27,7 @@ $id_buku = $_GET["id"];
 	        <ul class="navbar-nav mr-auto">
                 <ul>
                     <li class="nav-item active">
-                        <a class="nav-link" href="index.php">Home</a>
+                        <a class="nav-link" href="index1.php">Home</a>
                     </li>
                     <li class="nav-item active">
                         <a class="nav-link" href="buku.php">Booklist</a>
