@@ -53,9 +53,6 @@
 				<p class="paragraph">Perpustakaan RIANI adalah Perpustakaan yang dikhususkan untuk pelajar di SMAN 1 Siborongborong. RIANI merupakan kepanjangan dari inisial dari profil nama anggota developer, Diantaranya R untuk Rizky Wira Nanda Pasaribu, I Untuk Iqbal dari Muhammad Iqbal Faiz, A untuk Agita Muhammad Ramadhan Sembiring, N untuk Nugi dari Anugrah A TG Putra Hasibuan, I untuk Imelia Sembiring. Semoga dengan adanya perpustakaan digital ini dapat menunjang angka literasi di SMAN 1 Siborongborong dan juga meningkatkan angka literasi Kecamatan Siborongborong pada umumnya.</p>
                 <hr>
 			</div>
-			<!-- <div class="col text-center">
-				<p class="paragraph2">Perpustakaan Universitas Ahmad Dahlan  dirintis bersamaan dengan berdirinya Kursus B1 Muhammadiyah Yogyakarta  pada tahun 1957. Pada tahun 1972 terintegrasikan dengan IKIP  Muhammadiyah Cabang Yogyakarta yang selanjutnya menjadi IKIP  Muhammadiyah Yogykarta. Berdasarkan Surat Keputusan Menteri Pendidikan  dan Kebudayaan nomor: 102/D/1994 IKIP Muhammadiyah&nbsp;Yogyakarta&nbsp;beralih  fungsi menjadi Universitas Ahmad Dahlan.</p>
-			</div> -->
 		</div>
 	</div>
 </section>
